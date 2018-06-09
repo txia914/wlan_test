@@ -7,38 +7,13 @@
 
     </style>
 </head>
-
 <body>
 
-<canvas id="myCanvas" width="800" height="400"
-        style="border:1px solid #c3c3c3;">
-
-    <canvas id="myCanvas_chart" width="800" height="400"
-            style="border:1px solid #c3c3c3;">
-
-    <!--<script src="script.js">-->
 <script>
-    var t=[0,50,100,150,200,400,800];
-    var f=[150,200,0,20,10,100,200];
+
+    var t=[1,2,3,4,5,6,7,8,9,10];
+    var f=[10,20,30,40,50,60,70,80,90,100];
     var graphic_num=[t,f];
-
-
-    var canvas = document.getElementById("myCanvas");//find the canvas element
-    var ctx = canvas.getContext("2d");//create a drawing object
-    ctx.fillStyle = "#FF0000";//set the fill style of the drawing object color red
-   // ctx.fillRect(0,360,70,40);//draw rectange fillRect(x,y,width,height) on the canvas
-   // ctx.fillRect(80,40,40,400);
-   // ctx.fillRect(160,40,80,40);
-
-    var myChart=document.getElementById("myCanvas_chart");
-
-    for(i=0;i<t.length;i++){
-    ctx.moveTo(t[i],f[i]);//start point of the line
-    ctx.lineTo(t[i+1],f[i+1]);//end point of the line
-    ctx.moveTo(t[i+1],f[i+1]);
-    ctx.stroke();//actually draw the line
-    }
-
 </script>
 
 
