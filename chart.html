@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="100" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+
+<script>
+    function showBar(){
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#c3c3c3";
+
+
+
+
+
+        var values= [66, 77, 68, 20, 75, 85, 70, 80, 50, 65, 59, 75, 10, 69,66];
+        var distance = 10;
+        var maxheight = 80;
+        var barwidth= 100 /values.length - distance;
+
+
+
+        for(var i = 0; i < values.length; i++)
+        {
+
+
+
+            ctx.fillRect(barwidth * i + distance * i, maxheight - maxheight * values[i] / 100, barwidth, maxheight * values[i] / 100);
+        }
+    }
+
+
+
+    showBar();
+</script>
+
+
+
+</body>
+</html>
